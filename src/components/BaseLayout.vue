@@ -19,7 +19,7 @@
 
         <v-row>
             
-            <photo-cards  v-for="(photo,index) in photoDatas" :key="index" :src="photo.src" :prompt="photo.prompt"> </photo-cards>
+            <photo-cards  v-for="(photo,index) in photoDatas" :key="index" :src="photo.src" :prompt="photo.prompt" :linkJson="photo.linkJson"> </photo-cards>
 
 
         </v-row>
@@ -42,7 +42,7 @@ const fetchPhotos = () => {
   photos.value.forEach(element => {
     axios.get(element.data).then((data) => {
       let promptData = data.data.prompt;
-      photoDatas.value.push({ prompt: promptData, src: element.src });
+      photoDatas.value.push({ prompt: promptData, src: element.src,linkJson:element.data });
 
       if (photoDatas.value.length === photos.value.length) {
         console.log("All photos fetched!");
