@@ -11,13 +11,17 @@
     <v-card-title class="wrap-text">
         {{prompt}}
     </v-card-title >
+    <v-card-item> 
      <v-btn
       :href="linkJson"
       color="primary"
       text="JsonLink"
+      size="x-large"
+
       dark
     >
      </v-btn>
+     </v-card-item>
     </v-card>
 </template>
 
