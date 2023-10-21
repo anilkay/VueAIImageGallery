@@ -35,7 +35,6 @@ import photoData from "../assets/photoData.json";
 // Reaktif veri tanımlamaları
 const photos = ref(photoData.photos);
 const photoDatas = ref([]);
-const prompt = ref("aaa");
 
 // Fotoğrafları al
 const fetchPhotos = () => {
