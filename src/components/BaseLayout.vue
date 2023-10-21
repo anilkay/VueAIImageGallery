@@ -1,18 +1,7 @@
 <template>
     
   <v-layout class="rounded rounded-md">
-    <v-navigation-drawer
-         expand-on-hover
-         rail
-         location="left"
-    >
-      <v-list>
-        <v-list-item title="Navigation drawer"></v-list-item>
-        <v-list-item title="Navigation drawer"></v-list-item>
-        <v-list-item title="Navigation drawer"></v-list-item>
-
-      </v-list>
-    </v-navigation-drawer>
+    <navigation-component></navigation-component>
 
     <v-main class="d-flex align-center justify-center" style="min-height: 300px;padding: 4%">
       
@@ -31,6 +20,7 @@ import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import PhotoCards from "./PhotoCards.vue";
 import photoData from "../assets/photoData.json";
+import NavigationComponent from "../components/NavigationComponent.vue";
 
 // Reaktif veri tanımlamaları
 const photos = ref(photoData.photos);
