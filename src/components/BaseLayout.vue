@@ -1,9 +1,7 @@
 <template>
     
-  <v-layout class="rounded rounded-md">
-    <navigation-component></navigation-component>
 
-    <v-main class="d-flex align-center justify-center" style="min-height: 300px;padding: 4%">
+    <v-main class="d-flex align-center justify-center class= fill-height" style="min-height: 300px;padding: 4%">
       
 
         <v-row>
@@ -13,14 +11,12 @@
 
         </v-row>
     </v-main>
-  </v-layout>
 </template>
 <script setup>
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
 import PhotoCards from "./PhotoCards.vue";
 import photoData from "../assets/photoData.json";
-import NavigationComponent from "../components/NavigationComponent.vue";
 
 // Reaktif veri tanımlamaları
 const photos = ref(photoData.photos);
