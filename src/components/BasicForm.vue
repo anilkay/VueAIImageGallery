@@ -36,6 +36,7 @@ var formData = ref({});
 const handleSubmit = (data) => {
   console.log(data)
   //let strl=JSON.stringify(data)
+  console.log(formData.value)
   console.log(formData.value.firstname)
   console.log(formData.value.lastname)
 }

@@ -1,5 +1,5 @@
 <template>
-  <ResumeGenerator :prepare="prepareForm" @submit="submitForm" />
+  <ResumeGenerator v-model="formData" :prepare="prepareForm" @submit="submitForm" />
   <BasicForm />
   
 </template>
@@ -8,15 +8,19 @@
   import ResumeGenerator from '@/components/ResumeGenerator.vue';
   import BasicForm from '@/components/BasicForm.vue';
 
+  import { ref } from 'vue';
+
+  var formData = ref({});
+
   const prepareForm= function (data) 
   {
     console.log(data);
   }
 
-  const submitForm= function (data) 
+  const submitForm= function (_data) 
   {
     console.log("SubmitForm")
-    console.log(data);
+    console.log(formData.value)
   }
 
 </script>
