@@ -6,6 +6,7 @@ import ViteFonts from 'unplugin-fonts/vite'
 // Utilities
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
+import vueform from '@vueform/vueform/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -28,6 +29,7 @@ export default defineConfig({
         }],
       },
     }),
+    vueform(),
   ],
   define: { 'process.env': {} },
   resolve: {
