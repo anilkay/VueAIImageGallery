@@ -1,5 +1,5 @@
 <template>
-  <ResumeGenerator v-model="formData" :prepare="prepareForm" @submit="submitForm" />
+  <ResumeGenerator :sync="true" v-model="formData" :prepare="prepareForm" @submit="submitForm" />
   <BasicForm />
   
 </template>
@@ -21,6 +21,8 @@
   {
     console.log("SubmitForm")
     console.log(formData.value)
+    console.log(formData.value.startDate)
+    console.log(JSON.stringify(formData.value))
   }
 
 </script>

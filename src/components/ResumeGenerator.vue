@@ -51,7 +51,7 @@ export default {
           type: 'group',
           label: 'Work Experience',
           schema: {
-            name: {
+            companyName: {
               type: 'text',
               placeholder: 'Company Name',
               rules: 'required|max:255',

@@ -1,5 +1,5 @@
 <template>
-    <Vueform v-model="formData"  form-key="nE8e4wY5mcn5q1nTNakf"  endpoint="" @submit="handleSubmit" >
+    <Vueform v-model="formData" :sync="true"   form-key="nE8e4wY5mcn5q1nTNakf"  endpoint="" @submit="handleSubmit" >
         <GroupElement
       name="personal_information"
       label="Personal information"
@@ -16,6 +16,8 @@
         rules="required"
         :columns="6"
       />
+      <DateElement name="date" />
+
         </GroupElement>   
       <ButtonElement
       name="submit"
