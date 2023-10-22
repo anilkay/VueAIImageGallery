@@ -1,9 +1,12 @@
 <template>
-  <ResumeGenerator :prepare="prepareForm" :handleSubmit="submitForm" />
+  <ResumeGenerator :prepare="prepareForm" @submit="submitForm" />
+  <BasicForm />
+  
 </template>
 
 <script setup>
   import ResumeGenerator from '@/components/ResumeGenerator.vue';
+  import BasicForm from '@/components/BasicForm.vue';
 
   const prepareForm= function (data) 
   {
@@ -12,6 +15,7 @@
 
   const submitForm= function (data) 
   {
+    console.log("SubmitForm")
     console.log(data);
   }
 

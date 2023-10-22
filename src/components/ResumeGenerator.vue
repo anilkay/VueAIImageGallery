@@ -6,6 +6,8 @@ export default {
   setup: useVueform,
   data: () => ({
     vueform: {
+      endpoint: '',
+      
       schema: {
         personal_information: {
           type: 'group',
@@ -90,6 +92,7 @@ export default {
           buttonLabel: 'Generate Resume',
           addClass: 'mt-2',
           submits: true
+          
         }
       },
     },
