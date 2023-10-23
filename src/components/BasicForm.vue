@@ -46,6 +46,7 @@
 
 </template>
 <script setup>
+import Swal from 'sweetalert2'
 
 import { ref } from 'vue';
 
@@ -58,6 +59,11 @@ const handleSubmit = (data) => {
   console.log(formData.value)
   console.log(formData.value.firstname)
   console.log(formData.value.lastname)
+  Swal.fire({
+  title: 'Success!',
+  text: JSON.stringify(formData.value),
+  icon: 'success',
+})
 }
 
 
