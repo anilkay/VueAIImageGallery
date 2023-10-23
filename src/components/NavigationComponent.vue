@@ -16,10 +16,10 @@
 
   </v-list-item>
   <v-list-item>
-          <router-link to="/test">
+          <router-link to="/vueform">
             <v-btn
       color="primary"
-      text="Test"
+      text="vueform"
       dark
     >  </v-btn>
   </router-link>
