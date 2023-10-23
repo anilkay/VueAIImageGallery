@@ -18,6 +18,13 @@
       />
       <DateElement name="date" />
 
+      <ListElement name="list_of_actions">
+        <template   #default="{ index }">
+        <TextElement  :name="index" placeholder="action" />
+      </template>
+
+        </ListElement>
+
         </GroupElement>   
       <ButtonElement
       name="submit"
