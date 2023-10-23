@@ -25,7 +25,7 @@
     console.log(data);
   }
 
-  const submitForm= function (_data) 
+  const submitForm= function () 
   {
     console.log("SubmitForm")
     console.log(formData.value)
