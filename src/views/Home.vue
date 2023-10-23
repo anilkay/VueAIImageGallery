@@ -12,6 +12,7 @@
 </template>
 
 <script setup>
+  import swal from 'sweetalert2';
   import ResumeGenerator from '@/components/ResumeGenerator.vue';
   import BasicForm from '@/components/BasicForm.vue';
 
@@ -30,6 +31,12 @@
     console.log(formData.value)
     console.log(formData.value.startDate)
     console.log(JSON.stringify(formData.value))
+    swal.fire({
+      title: 'Success!',
+      text: JSON.stringify(formData.value),
+      icon: 'success',
+      confirmButtonText: 'OK'
+    })
   }
 
 </script>
