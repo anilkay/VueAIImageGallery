@@ -22,7 +22,16 @@
         <template   #default="{ index }">
         <TextElement  :name="index" placeholder="action" />
       </template>
+        </ListElement>
 
+
+        <ListElement name="list_of_milestones">
+        <template   #default="{ index }">
+          <ObjectElement :name="index" :label="`Milestone #${index+1}`"  >
+        <TextElement  name="milestoneName" placeholder="milestone" />
+        <DateElement name="milestoneDate" />
+      </ObjectElement>
+      </template>
         </ListElement>
 
         </GroupElement>   
@@ -41,6 +50,7 @@
 import { ref } from 'vue';
 
 var formData = ref({});
+
 
 const handleSubmit = (data) => {
   console.log(data)
