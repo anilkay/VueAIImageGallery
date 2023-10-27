@@ -1,5 +1,6 @@
 <template>
   <v-main class="d-flex align-center justify-center class= fill-height" style="min-height: 300px;padding: 4%">
+    
     <v-row>
       <v-col cols="12">
   <ResumeGenerator :sync="true" v-model="formData" :prepare="prepareForm" @submit="submitForm" />
@@ -15,7 +16,6 @@
   import swal from 'sweetalert2';
   import ResumeGenerator from '@/components/ResumeGenerator.vue';
   import BasicForm from '@/components/BasicForm.vue';
-
   import { ref } from 'vue';
 
   var formData = ref({});

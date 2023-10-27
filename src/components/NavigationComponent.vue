@@ -25,7 +25,16 @@
   </router-link>
 
   </v-list-item>
+  <v-list-item>
+          <router-link to="/vueuseexample">
+            <v-btn
+      color="primary"
+      text="vueuseexample"
+      dark
+    >  </v-btn>
+  </router-link>
 
+  </v-list-item>
       </v-list>
     </v-navigation-drawer>
 </template>

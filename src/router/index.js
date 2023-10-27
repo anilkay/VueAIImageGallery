@@ -19,6 +19,11 @@ const routes = [
         name:"Home",
         component: () => import(/* webpackChunkName: "home" */ '@/views/AiPhotoGallery.vue'),
 
+      },
+      {
+        path:"/vueuseexample",
+        name:"VueUseExample",
+        component: () => import('@/views/VueUseExamples.vue'),
       }
     ],
   },
