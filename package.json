@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
+    "@splidejs/vue-splide": "^0.6.12",
     "@vueform/vueform": "^1.5.2",
     "@vueuse/core": "^10.5.0",
     "axios": "^1.5.1",

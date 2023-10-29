@@ -35,6 +35,16 @@
   </router-link>
 
   </v-list-item>
+  <v-list-item>
+          <router-link to="/photocarousel">
+            <v-btn
+      color="primary"
+      text="photocarousel"
+      dark
+    >  </v-btn>
+  </router-link>
+
+  </v-list-item>
       </v-list>
     </v-navigation-drawer>
 </template>

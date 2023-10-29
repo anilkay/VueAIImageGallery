@@ -24,6 +24,11 @@ const routes = [
         path:"/vueuseexample",
         name:"VueUseExample",
         component: () => import('@/views/VueUseExamples.vue'),
+      },
+      {
+        path:"/photocarousel",
+        name:"PhotoCarousel",
+        component: () => import('@/views/PhotoCarousel.vue'),
       }
     ],
   },
