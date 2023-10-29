@@ -34,4 +34,6 @@ const splideOptions = ref({
       perPage : 3,
       rewind : true,
     });
+
+//TODO add play pause button and change autoplay speed
 </script>
