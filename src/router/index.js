@@ -1,5 +1,6 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
+import { GetTitleFromRoute } from '@/utils/TitleUtils'
 
 const routes = [
   {
@@ -37,6 +38,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+})
+
+router.beforeEach((to,from) => {
+  if(from.name== to.name) return false;
+
+  console.log(to)
+  document.title = GetTitleFromRoute(to)
+  return true;
 })
 
 export default router
