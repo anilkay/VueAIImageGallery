@@ -41,8 +41,14 @@ export default {
     },
     linkJson:{
       type:String,
-      required:false,
-      default:"/contents/Medium_Shot_Photo_of_a_Programmer_writing_code_in_a_Coffee_Shop_with_a_S4248866250_St50_G7.5.json"
+      default:"/contents/Medium_Shot_Photo_of_a_Programmer_writing_code_in_a_Coffee_Shop_with_a_S4248866250_St50_G7.5.json",
+      validator: function (value) {
+        //ends with .json
+        const endsWithJson=value.endsWith(".json")
+        const hasValidJsonFileName=value.length>5
+
+        return endsWithJson && hasValidJsonFileName
+      }
     }
   }
 }
