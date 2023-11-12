@@ -30,12 +30,10 @@ export default {
   props: {
     src: {
       type: String,
-      required: false,
       default: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
     },
     prompt:{
         type:String,
-        required:false,
          default:"Top western road trips"
 
     },
