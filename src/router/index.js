@@ -30,6 +30,11 @@ const routes = [
         path:"/photocarousel",
         name:"PhotoCarousel",
         component: () => import('@/views/PhotoCarousel.vue'),
+      },
+      {
+        path:"/optionalvalidation",
+        name:"OptionalValidation",
+        component: () => import('@/views/OptionalValidation.vue'),
       }
     ],
   },
